@@ -1,0 +1,271 @@
+html {
+    overflow-y: scroll;
+}
+
+body {
+    background-color: mintcream;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.navbar {
+    background-color: mintcream;
+    font-size: 20px;
+}
+
+.active, .nav-link:hover{
+    color: #333;
+}
+
+#navbar-logo {
+    height: 50px;
+}
+
+.footer {
+    background-color: darkslategray;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 4rem;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('img_parallax.jpg');
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://sensiseeds.com/blog/wp-content/uploads/2019/11/how-hemp-textiles-are-produced-1024x540.jpg");
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#home-label {
+    width: 100%;
+    height: 100%;
+    padding-left: 200px;
+    text-align: left;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+#product-header {
+    height: 22vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#product-header div {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid limegreen;
+    border-bottom: 3px solid limegreen;
+}
+
+.carousel {
+    height: 500px;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-caption {
+    padding-bottom: 0;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.carousel-indicators {
+    padding-bottom: 20px;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+  }
+
+#carousel-img {
+    height: 450px;
+    border-radius: 3%;
+    color: none
+}
+
+#home-banner {
+    height: 500px;
+    width:100%;
+    background-image: url(https://c0.wallpaperflare.com/preview/934/105/169/background-close-up-color-colour.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home-banner div {
+    color: whitesmoke;
+    text-align: center;
+    width: 1100px;
+}
+
+#products {
+    display:flex;
+    justify-content: space-evenly;
+    padding-top: 25px;;
+}
+
+#product-card   {
+    width: 18rem;
+    height: 400px;
+}
+
+#blog-card   {
+    width: 18rem;
+    transition: 0.3s;
+}
+
+#blog-card:hover {
+    margin-top: -5px;
+    box-shadow: rgba(0, 0, 0, 0.649) 0px 19px 43px;
+    transform: translate3d(0px, -1px, 0px);
+}
+
+a.custom-card,
+a.custom-card:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+
+.shop-item-image{
+    width: 100%;
+    height: 100%;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}

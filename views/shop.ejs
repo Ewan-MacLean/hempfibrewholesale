@@ -1,0 +1,66 @@
+<% layout('layouts/boilerplate') %>
+<head>
+    <script src="store.js" async></script>
+</head>
+<body>
+
+    <h1>Products</h1>
+    <div id="gallery" class="container mb-4 px-0 ">
+        <div id="products" class="row">
+            <div class="col-auto">
+                    <div class="card" id="product-card">
+                        <img class="card-img-top shop-item-image" src="https://image.cannabis.wiki/news/istock-1032521774-1566677660-1440w.jpeg" >
+                            <div class="card-body">
+                                <h5 class="card-title shop-item-title">Product 1</h5>
+                                <h6 class="card-subtitle mb-2 text-muted shop-item-price">$19.99</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <button class="btn btn-success shop-item-button">Add to cart</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-auto">
+                    <div class="card" id="product-card">
+                        <img class="card-img-top shop-item-image" src="https://thereview.ca/wp-content/uploads/2018/08/CB_2018-08-03_marcBercier-hempcrete_WEB.jpg" >
+                            <div class="card-body">
+                                <h5 class="card-title  shop-item-title">Product 2</h5>
+                                <h6 class="card-subtitle mb-2 text-muted shop-item-price">$39.99</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <button class="btn btn-success shop-item-button">Add to cart</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-auto">
+                    <div class="card" id="product-card">
+                        <img class="card-img-to shop-item-image" src="https://static.fibre2fashion.com/articleresources/images/88/8701/hemp_Big.jpg">
+                            <div class="card-body">
+                                <h5 class="card-title shop-item-title">Product 3</h5>
+                                <h6 class="card-subtitle mb-2 text-muted shop-item-price">$69.99</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <button class="btn btn-success shop-item-button">Add to cart</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </section>
+
+</body>
