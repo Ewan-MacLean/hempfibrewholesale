@@ -275,7 +275,9 @@ a.custom-card:hover {
     #home-label {
         padding-left: 0px;
     }
-
+    #home-banner {
+        width: fit-content;
+    }
     #home-banner div h1 {
         font-size: 1rem;
     }
