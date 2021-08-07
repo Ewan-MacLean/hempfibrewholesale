@@ -269,3 +269,18 @@ a.custom-card:hover {
     margin: 40px auto 80px auto;
     font-size: 1.75em;
 }
+
+@media only screen and (max-width:1150px) {
+
+    #home-label {
+        padding-left: 0px;
+    }
+
+    #home-banner div h1 {
+        font-size: 1rem;
+    }
+
+    #home-banner div h5 {
+        font-size: 0.7rem;
+    }
+}
