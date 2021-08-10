@@ -306,6 +306,11 @@ a.custom-card:hover {
 }
 
 @media only screen and (max-width:793px){
+
+    html {
+        overflow-x: hidden;
+    }
+
     #home-banner div {
         width: 300px;
     }
@@ -347,7 +352,7 @@ a.custom-card:hover {
     }
 
     .cart-row {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
         width: 70vw;
     }
 
@@ -356,7 +361,7 @@ a.custom-card:hover {
     }
 
 
-@media only screen and (max-width:414px){
+@media only screen and (max-width:458px){
     #home-banner div {
         width: 220px;
     }
