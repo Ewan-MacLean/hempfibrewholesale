@@ -346,7 +346,14 @@ a.custom-card:hover {
         font-size: ;
     }
 
+    .cart-row {
+        font-size: 0.7rem;
+        width: 55vw;
+    }
 
+    .cart-item-image {
+        display: none;
+    }
 
 
 @media only screen and (max-width:414px){
