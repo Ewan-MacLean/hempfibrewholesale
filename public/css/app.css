@@ -74,7 +74,7 @@ body {
 
 #product-header div {
     height: 100px;
-    width: 100%;
+    width: 75vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,13 +83,13 @@ body {
 }
 
 .carousel {
-    height: 500px;
-    width: 60%;
+    height: fit-content;
+    width: 60vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: auto;
-    padding-bottom: 5em;
+    margin-top: 0;
+    padding-bottom: 3em ;
 }
 
 .carousel-caption {
@@ -111,7 +111,7 @@ body {
   }
 
 #carousel-img {
-    height: 450px;
+    height: 45vh;
     border-radius: 3%;
     color: none
 }
@@ -307,10 +307,6 @@ a.custom-card:hover {
 
 @media only screen and (max-width:793px){
 
-    html {
-        overflow-x: hidden;
-    }
-
     #home-banner div {
         width: 300px;
     }
@@ -322,11 +318,11 @@ a.custom-card:hover {
     }
     
     #product-header div h1{
-        font-size: 25px ;
+        font-size: 1.2rem ;
     }
 
     #carousel-img {
-        height: 250px;
+        height: 25vh;
     } 
 
     #products {
@@ -361,7 +357,7 @@ a.custom-card:hover {
     }
 
 
-@media only screen and (max-width:458px){
+@media only screen and (max-width:500px){
     #home-banner div {
         width: 220px;
     }
@@ -388,7 +384,7 @@ a.custom-card:hover {
     }
 
     #product-card {
-        width: 60vw;
+        width: 50vw;
         height: fit-content;
     }
 
