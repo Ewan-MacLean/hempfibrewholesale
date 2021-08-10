@@ -84,10 +84,12 @@ body {
 
 .carousel {
     height: 500px;
-    width: 1100px;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: auto;
+    padding-bottom: 5em;
 }
 
 .carousel-caption {
@@ -130,8 +132,10 @@ body {
 
 #home-banner div {
     color: whitesmoke;
-    text-align: center;
+    /* text-align: center; */
     width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #products {
@@ -270,19 +274,55 @@ a.custom-card:hover {
     font-size: 1.75em;
 }
 
-@media only screen and (max-width:1150px) {
+@media only screen and (max-width:1200px) {
 
     #home-label {
-        padding-left: 0px;
+        padding-left: 25px;
     }
-    #home-banner {
-        width: fit-content;
-    }
-    #home-banner div h1 {
-        font-size: 1rem;
+     #home-banner div{
+        width: 50vw;
+    } 
+    #product-header div h1{
+        font-size: 25px ;
     }
 
     #home-banner div h5 {
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
 }
+
+@media only screen and (max-width:793px){
+    #home-banner div {
+        width: 300px;
+    }
+    #home-banner div h1 {
+        font-size: 1rem;
+        }
+    #home-banner div h5 {
+        font-size: 0.7rem;
+    }
+    
+    #product-header div h1{
+        font-size: 25px ;
+    }
+
+
+@media only screen and (max-width:375px){
+    #home-banner div {
+        width: 220px;
+    }
+    #home-banner div h1 {
+        font-size: 1rem;
+        }
+    #home-banner div h5 {
+        font-size: 0.6rem;
+    }
+
+    #blog-card {
+        width: 50vw;
+    }
+
+    #product-header div h1{
+        font-size: 15px ;
+    }
+
