@@ -141,12 +141,12 @@ body {
 #products {
     display:flex;
     justify-content: space-evenly;
-    padding-top: 25px;;
+    padding-top: 25px;
 }
 
 #product-card   {
-    width: 18rem;
-    height: 400px;
+    width: 20vw;
+    height: 50vh;
 }
 
 #blog-card   {
@@ -289,6 +289,20 @@ a.custom-card:hover {
     #home-banner div h5 {
         font-size: 1rem;
     }
+
+    .shop-item-text {
+        font-size: 0.8em;
+    }
+
+    .shop-item-image {
+        height: 150px;
+    }
+
+    #product-card {
+        height: fit-content;
+    }
+
+
 }
 
 @media only screen and (max-width:793px){
@@ -296,18 +310,46 @@ a.custom-card:hover {
         width: 300px;
     }
     #home-banner div h1 {
-        font-size: 1rem;
+        font-size: 2rem;
         }
     #home-banner div h5 {
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
     
     #product-header div h1{
         font-size: 25px ;
     }
 
+    #carousel-img {
+        height: 250px;
+    } 
 
-@media only screen and (max-width:375px){
+    #products {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: none;
+    }
+
+    #product-card {
+        height: fit-content;
+        width: 30vw;
+        margin-top: 15px;
+    }
+
+    .shop-item-image {
+        height: 100px;
+    }
+
+    .shop-item-text {
+        font-size: ;
+    }
+
+
+
+
+@media only screen and (max-width:414px){
     #home-banner div {
         width: 220px;
     }
@@ -315,14 +357,26 @@ a.custom-card:hover {
         font-size: 1rem;
         }
     #home-banner div h5 {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 
-    #blog-card {
+    /* #blog-card {
         width: 50vw;
-    }
+    } */
 
     #product-header div h1{
         font-size: 15px ;
+    }
+
+    #products {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin: none;
+    }
+
+    #product-card {
+        width: 60vw;
+        height: fit-content;
     }
 
