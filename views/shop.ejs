@@ -7,23 +7,25 @@
     <h1>Products</h1>
     <div id="gallery" class="container mb-4 px-0 ">
         <div id="products" class="row">
-            <div class="col-auto">
+            <%// items.inventory.forEach(function(item){ %>
+            <div class="col-auto" data-item-id= "<%=// item.id %>" >
                     <div class="card" id="product-card">
                         <img class="card-img-top shop-item-image" src="https://image.cannabis.wiki/news/istock-1032521774-1566677660-1440w.jpeg" >
                             <div class="card-body">
-                                <h5 class="card-title shop-item-title">Product 1</h5>
-                                <h6 class="card-subtitle mb-2 text-muted shop-item-price">$19.99</h6>
+                                <h5 class="card-title shop-item-title">Hemp Bast Fibre<%= //item.name %></h5>
+                                <h6 class="card-subtitle mb-2 text-muted shop-item-price">$49.99<%=// item.price / 100 %> </h6>
                                 <p class="card-text shop-item-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <button class="btn btn-success shop-item-button">Add to cart</button>
                         </div>
                     </div>
                 </a>
             </div>
+            <% //}) %>
             <div class="col-auto">
                     <div class="card" id="product-card">
                         <img class="card-img-top shop-item-image" src="https://thereview.ca/wp-content/uploads/2018/08/CB_2018-08-03_marcBercier-hempcrete_WEB.jpg" >
                             <div class="card-body">
-                                <h5 class="card-title  shop-item-title">Product 2</h5>
+                                <h5 class="card-title  shop-item-title">Hemp Hurd</h5>
                                 <h6 class="card-subtitle mb-2 text-muted shop-item-price">$39.99</h6>
                                 <p class="card-text shop-item-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <button class="btn btn-success shop-item-button">Add to cart</button>
@@ -31,18 +33,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-auto">
-                    <div class="card" id="product-card">
-                        <img class="card-img-to shop-item-image" src="https://static.fibre2fashion.com/articleresources/images/88/8701/hemp_Big.jpg">
-                            <div class="card-body">
-                                <h5 class="card-title shop-item-title">Product 3</h5>
-                                <h6 class="card-subtitle mb-2 text-muted shop-item-price">$69.99</h6>
-                                <p class="card-text shop-item-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <button class="btn btn-success shop-item-button">Add to cart</button>
-                        </div>
-                    </div>
-                </a>
-            </div>
+
         </div>
     </div>
 

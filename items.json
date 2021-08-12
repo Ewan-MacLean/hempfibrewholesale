@@ -1,0 +1,16 @@
+{
+    "inventory": [
+        {
+            "id": 1,
+            "name": "Hemp Bast Fibre",
+            "price": 5000,
+            "imgName": "https://image.cannabis.wiki/news/istock-1032521774-1566677660-1440w.jpeg"
+        },
+        {
+            "id": 2,
+            "name": "Hemp Hurd",
+            "price": 3000,
+            "imgName": "https://thereview.ca/wp-content/uploads/2018/08/CB_2018-08-03_marcBercier-hempcrete_WEB.jpg"
+        }
+    ]
+}
