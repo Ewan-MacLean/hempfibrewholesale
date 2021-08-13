@@ -85,7 +85,7 @@ body {
 
 .carousel {
     height: fit-content;
-    width: 60vw;
+    width: 55vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,7 +146,7 @@ body {
 }
 
 #product-card   {
-    width: 22vw;
+    width: 20vw;
     height: fit-content;
     margin-left: 1.5em ;
     margin-right: 1.5em ;
@@ -286,6 +286,28 @@ a.custom-card:hover {
     display: block;
     margin: 40px auto 80px auto;
     font-size: 1.75em;
+}
+
+form {
+    margin-bottom: 10em;
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    margin-bottom: 1em;
+    max-width: 30vw;
+}
+
+form button {
+    width: 25vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#email-form-text{
+    min-width: 50vw;
+    min-height: 5em;
 }
 
 @media only screen and (max-width:1200px) {
