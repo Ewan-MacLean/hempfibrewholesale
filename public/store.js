@@ -36,6 +36,9 @@ function purchaseClicked(event) {
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
 
+    var cartItemQuantities = document.getElementsByClassName('cart-quantity')[0]
+    var itemQuantitiesValues = cartItemQuantities.getElementsByClassName('cart-item-input').value
+
     
 
     var orderText = document.getElementById('email-form-text')
