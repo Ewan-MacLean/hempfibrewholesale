@@ -30,20 +30,48 @@ function purchaseClicked(event) {
     // alert('Thank you for your purchase')
     // window.open('mailto:test@example.com');
    
+
+    // cartItemNames IS AN ARRAY!
+
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
 
-    var cartQuantityItem1 = document.getElementsByClassName('cart-quantity-input').value
-    var cartQuantityItem2 = document.getElementsByClassName('cart-quantity-input').value
+    
 
     var orderText = document.getElementById('email-form-text')
-    var orderList = document.getElementById('orderList')
+    var orderList = document.getElementById('order-list')
+
 
     for (var i = 0; i < cartItemNames.length; i++) {
-            // orderText.value = cartItemNames[i].innerText
-            orderList.innerText = cartItemNames[i].innerText + " LINE BREAK GOES HERE!!! " + cartItemNames[i+1].innerText
-            console.log(cartItemNames[i].innerText)
-    }
+
+            // better defining the array hereca
+        // var titleText = cartItemNames[i].innerText
+        
+        if (cartItemNames.length === 2)  {
+        var itemNameArray = [cartItemNames[0].innerText , cartItemNames[1].innerText]
+
+
+        orderList.value = itemNameArray.join("\n");
+
+            console.log(itemNameArray)
+        }
+            else {
+
+                var itemNameArray = [cartItemNames[i].innerText]
+
+
+                orderList.value = itemNameArray.join("\n");
+        
+                    // console.log(itemNameArray)
+                }
+                
+            }
+        
+
+
+            // orderList.innerText = itemNameArray.join("\n");
+
+    
 
 
         while (cartItems.hasChildNodes()) {
