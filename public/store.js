@@ -27,55 +27,33 @@ function ready() {
 }
 
 function purchaseClicked(event) {
-    // alert('Thank you for your purchase')
-    // window.open('mailto:test@example.com');
-   
 
     // cartItemNames IS AN ARRAY!
 
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
-
-    var cartItemQuantities = document.getElementsByClassName('cart-quantity')[0]
-    var itemQuantitiesValues = cartItemQuantities.getElementsByClassName('cart-item-input').value
-
-    
-
-    var orderText = document.getElementById('email-form-text')
     var orderList = document.getElementById('order-list')
 
+    // var cartItemQuantities = document.getElementsByClassName('cart-quantity')[0]
+    // var itemQuantitiesValues = document.getElementsByClassName('cart-item-input').value
 
     for (var i = 0; i < cartItemNames.length; i++) {
 
-            // better defining the array hereca
-        // var titleText = cartItemNames[i].innerText
-        
         if (cartItemNames.length === 2)  {
-        var itemNameArray = [cartItemNames[0].innerText , cartItemNames[1].innerText]
+            var itemNameArray = [cartItemNames[0].innerText + " Qty:", cartItemNames[1].innerText + " Qty:"] 
 
-
-        orderList.value = itemNameArray.join("\n");
-
-            console.log(itemNameArray)
+                orderList.value = itemNameArray.join("\n");            
         }
-            else {
 
-                var itemNameArray = [cartItemNames[i].innerText]
-
+        else {
+            var itemNameArray = [cartItemNames[i].innerText + " Qty:"]
 
                 orderList.value = itemNameArray.join("\n");
-        
-                    // console.log(itemNameArray)
-                }
-                
-            }
-        
+            }     
+        }
 
-
-            // orderList.innerText = itemNameArray.join("\n");
-
-    
-
+        // on this line, itemNameArray's value depends on the if statement
+        console.log(itemNameArray)
 
         while (cartItems.hasChildNodes()) {
         
