@@ -37,16 +37,27 @@ function purchaseClicked(event) {
     // var cartItemQuantities = document.getElementsByClassName('cart-quantity')[0]
     // var itemQuantitiesValues = document.getElementsByClassName('cart-item-input').value
 
+    var quantityElement = cartItems.getElementsByClassName('cart-quantity-input')
+
+    console.log(quantityElement)
+    console.log(quantity1)
+    console.log(quantity2)
+
     for (var i = 0; i < cartItemNames.length; i++) {
 
+        var quantityElements = cartItems.getElementsByClassName('cart-item-input').value
+
         if (cartItemNames.length === 2)  {
-            var itemNameArray = [cartItemNames[0].innerText + " Qty:", cartItemNames[1].innerText + " Qty:"] 
+            var quantity1 = quantityElement[0].value
+            var quantity2 = quantityElement[1].value
+            var itemNameArray = [cartItemNames[0].innerText + " Qty: " + quantity1, cartItemNames[1].innerText + " Qty: "  + quantity2] 
 
                 orderList.value = itemNameArray.join("\n");            
         }
 
         else {
-            var itemNameArray = [cartItemNames[i].innerText + " Qty:"]
+            var quantity1 = quantityElement[0].value
+            var itemNameArray = [cartItemNames[i].innerText + " Qty: " + quantity1]
 
                 orderList.value = itemNameArray.join("\n");
             }     
