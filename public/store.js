@@ -34,18 +34,9 @@ function purchaseClicked(event) {
     var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
     var orderList = document.getElementById('order-list')
 
-    // var cartItemQuantities = document.getElementsByClassName('cart-quantity')[0]
-    // var itemQuantitiesValues = document.getElementsByClassName('cart-item-input').value
-
     var quantityElement = cartItems.getElementsByClassName('cart-quantity-input')
 
-    console.log(quantityElement)
-    console.log(quantity1)
-    console.log(quantity2)
-
     for (var i = 0; i < cartItemNames.length; i++) {
-
-        var quantityElements = cartItems.getElementsByClassName('cart-item-input').value
 
         if (cartItemNames.length === 2)  {
             var quantity1 = quantityElement[0].value
