@@ -4,17 +4,17 @@
 </head>
 <body>
 
-    <h1>Products</h1>
+    <h1>Shop</h1>
     <div id="gallery" class="container mb-4 px-0 ">
         <div id="products" class="row">
             <%// items.inventory.forEach(function(item){ %>
             <div class="col-auto" data-item-id= "<%=// item.id %>" >
                     <div class="card" id="product-card">
-                        <img class="card-img-top shop-item-image" src="https://image.cannabis.wiki/news/istock-1032521774-1566677660-1440w.jpeg" >
-                            <div class="card-body">
-                                <h5 class="card-title shop-item-title">Hemp Bast Fibre<%= //item.name %></h5>
+                        <img class="card-img-top shop-item-image" src="https://images.squarespace-cdn.com/content/v1/582cb8819de4bb9b9e7c0bb9/1485547277733-VM1MORK7TXHHGG650101/_TJS7805.jpg?format=500w" >
+                            <div class="card-body" id="shop-card-body">
+                                <h5 class="card-title shop-item-title">Hemp Bast Fibre (100kg)<%= //item.name %></h5>
                                 <h6 class="card-subtitle mb-2 text-muted shop-item-price">$49.99<%=// item.price / 100 %> </h6>
-                                <p class="card-text shop-item-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text shop-item-text">Hemp bast fibres are remarkably strong and lightweight. Already used for everything from clothing to automotive composites, hemp bast is an extremely versatile product.</p>
                                 <button class="btn btn-success shop-item-button">Add to cart</button>
                         </div>
                     </div>
@@ -23,11 +23,11 @@
             <% //}) %>
             <div class="col-auto">
                     <div class="card" id="product-card">
-                        <img class="card-img-top shop-item-image" src="https://thereview.ca/wp-content/uploads/2018/08/CB_2018-08-03_marcBercier-hempcrete_WEB.jpg" >
-                            <div class="card-body">
-                                <h5 class="card-title  shop-item-title">Hemp Hurd</h5>
+                        <img class="card-img-top shop-item-image" src="https://images.squarespace-cdn.com/content/v1/582cb8819de4bb9b9e7c0bb9/1485547294312-E1ZU1FQ8RHL4VW3GEOWQ/_TJS7812.jpg?format=500w" >
+                            <div class="card-body" id="shop-card-body">
+                                <h5 class="card-title  shop-item-title">Hemp Hurd (100kg)</h5>
                                 <h6 class="card-subtitle mb-2 text-muted shop-item-price">$39.99</h6>
-                                <p class="card-text shop-item-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text shop-item-text">The soft core of the hemp stalk (hurd) is light, dust-free and is highly absorbent. Hemp hurd can be used as a green building material in hempcrete, mulch, ceilings, and tiles.</p>
                                 <button class="btn btn-success shop-item-button">Add to cart</button>
                         </div>
                     </div>
@@ -51,7 +51,7 @@
             <strong class="cart-total-title">Total</strong>
             <span class="cart-total-price">$0</span>
         </div>
-        <a href="#html-form">
+        <a id="purchase-button"href="#html-form">
             <button class="btn btn-primary btn-purchase" type="button">NEXT</button>
         </a>        
     </section>
@@ -60,7 +60,7 @@
      <div id="html-form">
         <form action="https://formsubmit.co/ewanmaclean77@gmail.com" method="POST">
 
-            <input id="input" type="email" name="Email" placeholder="Email Address" required>
+            <input id="input" type="email" name="Email" placeholder="Email Address (required)" required>
             <input id="input" type="tel" name="Phone" placeholder="Phone (optional)">
             <h2>Your Order</h2>
             <textarea name="Order" id="order-list" cols="30" rows="6"></textarea>

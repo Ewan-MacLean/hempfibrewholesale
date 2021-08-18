@@ -85,7 +85,7 @@ body {
 
 .carousel {
     height: fit-content;
-    width: 55vw;
+    width: 50vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,13 +112,15 @@ body {
   }
 
 #carousel-img {
-    height: 45vh;
+    height: 35vh;
     border-radius: 3%;
-    color: none
+    color: none;
+    object-fit: cover;
+    
 }
 
 #home-banner {
-    height: 500px;
+    height: 50vh;
     width:100%;
     background-image: url(https://c0.wallpaperflare.com/preview/934/105/169/background-close-up-color-colour.jpg);
     display: flex;
@@ -139,22 +141,6 @@ body {
     margin-right: auto;
 }
 
-#products {
-    display:flex;
-    justify-content: center;
-    padding-top: 1em;
-}
-
-#product-card   {
-    width: 20vw;
-    height: fit-content;
-    margin-left: 1.5em ;
-    margin-right: 1.5em ;
-}
-
-#gallery {
-    /* margin-top: -5em; */
-}
 
 #blogs {
     display:flex;
@@ -166,6 +152,11 @@ body {
     width: 22em;
     transition: 0.3s;
     margin-top: 2em;
+}
+
+.blog-card-img {
+    object-fit: cover;
+    height: 20vh;
 }
 
 #blog-card:hover {
@@ -180,10 +171,33 @@ a.custom-card:hover {
   text-decoration: inherit;
 }
 
+#products {
+    display:flex;
+    justify-content: center;
+    padding-top: 1em;
+}
+
+#product-card   {
+    width: 23vw;
+    height: 50vh;
+    margin-left: 1.5em ;
+    margin-right: 1.5em ;
+}
 
 .shop-item-image{
     width: 100%;
-    height: 15em;
+    height: 13em;
+    object-fit: cover;
+}
+
+#shop-card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.shop-item-button {
+    display:flex;
 }
 
 .cart-header {
@@ -284,10 +298,16 @@ a.custom-card:hover {
 
 .btn-purchase {
     display: block;
-    margin: 40px auto 80px auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+    margin-top: 2em;
     font-size: 1.75em;
 }
 
+ /* #purchase-button {
+    text-decoration: none;
+}  */
 
 #html-form {
     display: none;
@@ -326,7 +346,7 @@ form input {
 }
 
 #comments {
-    width: 60%;
+    width: 30vw;
     height: ;
     margin-left:auto ;
     margin-right:auto ; 
@@ -365,7 +385,7 @@ form button {
     }
 
     #product-card {
-        height: 40vh;
+        height: fit-content;
         width: 25vw;
     }
 
