@@ -311,13 +311,15 @@ form input {
     margin-right:auto ;
 }
 
-form textarea {
+#order-list{
     width: 30vw;
+    height: 20vh;
     margin-left:auto ;
     margin-right:auto ;
 }
 
 #order-total {
+    width: 30vw;
     height: 15vh;
     margin-left:auto ;
     margin-right:auto ;
@@ -469,6 +471,7 @@ form button {
     }
     #order-total{
         width: 80%;
+        height: 20vh;
     }
 
     #input{
