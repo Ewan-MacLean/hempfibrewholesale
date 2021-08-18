@@ -1,3 +1,7 @@
+html {
+    overflow-x: hidden;
+}
+
 body {
     background-color: mintcream;
     font-family: 'Maven Pro', sans-serif;
