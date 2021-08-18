@@ -51,20 +51,21 @@
             <strong class="cart-total-title">Total</strong>
             <span class="cart-total-price">$0</span>
         </div>
-        <button class="btn btn-primary btn-purchase" type="button">NEXT</button>
+        <a href="#html-form">
+            <button class="btn btn-primary btn-purchase" type="button">NEXT</button>
+        </a>        
     </section>
-
-
-    <div id="order-contents"></div>
 
 
      <div id="html-form">
         <form action="https://formsubmit.co/ewanmaclean77@gmail.com" method="POST">
 
-            <input type="email" name="email" placeholder="Email Address" required>
-            <input type="tel" name="phone" placeholder="Phone" >
-            <textarea name="order" id="order-list" cols="30" rows="6"></textarea>
-            <textarea name="Total" id="order-total" cols="30" rows="3"></textarea>
+            <input type="email" name="Email" placeholder="Email Address" required>
+            <input type="tel" name="Phone" placeholder="Phone">
+            <h2>Your Order</h2>
+            <textarea name="Order" id="order-list" cols="30" rows="6"></textarea>
+            <h2>Total</h2>
+            <textarea name="Total" id="order-total" cols="3" rows="3"></textarea>
 
             <input type="hidden" name="_captcha" value="false">
             <button type="submit">Confirm Order</button>

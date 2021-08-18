@@ -284,6 +284,11 @@ a.custom-card:hover {
     font-size: 1.75em;
 }
 
+
+#html-form {
+    display: none;
+}
+
 form {
     margin-bottom: 10em;
     display: flex;
@@ -293,6 +298,14 @@ form {
 form input {
     margin-bottom: 1em;
     max-width: 30vw;
+}
+
+form textarea {
+    width: 30vw;
+}
+
+#order-total {
+    height: 15vh;
 }
 
 form button {

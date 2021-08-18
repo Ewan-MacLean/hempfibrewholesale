@@ -32,9 +32,16 @@ function purchaseClicked(event) {
 
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
+    var htmlForm = document.getElementById('html-form')
     var orderList = document.getElementById('order-list')
+    var orderTotal = document.getElementById('order-total')
 
     var quantityElement = cartItems.getElementsByClassName('cart-quantity-input')
+
+    var totalElement = document.getElementsByClassName('cart-total-price')[0]
+    var total = parseFloat(totalElement.innerText.replace('$', ''))
+    var tax = total * 0.15
+    var totalAfterTax = total * 1.15
 
     for (var i = 0; i < cartItemNames.length; i++) {
 
@@ -54,8 +61,15 @@ function purchaseClicked(event) {
             }     
         }
 
-        // on this line, itemNameArray's value depends on the if statement
-        console.log(itemNameArray)
+        if (cartItemNames.length > 0 ) {
+        document.getElementById("html-form").style.display = "block";
+
+        total = Math.round(total * 100) / 100
+        tax = Math.round(tax * 100) / 100
+        totalAfterTax = Math.round(totalAfterTax * 100) / 100
+        var totalCalc = ["$ " + total , "$ " + tax + " Tax" , "-------------" , "$ " + totalAfterTax]
+            orderTotal.value = totalCalc.join("\n");
+        }
 
         while (cartItems.hasChildNodes()) {
         
