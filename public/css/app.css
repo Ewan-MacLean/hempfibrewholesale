@@ -299,28 +299,35 @@ form {
     flex-direction: column;
 }
 
+form h2 {
+    margin-left:auto ;
+    margin-right:auto ;
+}
+
 form input {
     margin-bottom: 1em;
-    max-width: 30vw;
+    width: 30vw; 
+    margin-left:auto ;
+    margin-right:auto ;
 }
 
 form textarea {
     width: 30vw;
+    margin-left:auto ;
+    margin-right:auto ;
 }
 
 #order-total {
     height: 15vh;
+    margin-left:auto ;
+    margin-right:auto ;
 }
 
 form button {
     width: 25vw;
+    margin-top: 2em;
     margin-left: auto;
     margin-right: auto;
-}
-
-#email-form-text{
-    min-width: 50vw;
-    min-height: 5em;
 }
 
 @media only screen and (max-width:1200px) {
@@ -350,6 +357,17 @@ form button {
     #product-card {
         height: 40vh;
         width: 20vw;
+    }
+
+    #order-list {
+        width: 60%;
+    }
+    #order-total{
+        width: 60%;
+    }
+
+    #input{
+        width: 60%;
     }
 
 
@@ -406,6 +424,18 @@ form button {
         display: none;
     }
 
+    
+    #order-list {
+        width: 80%;
+    }
+    #order-total{
+        width: 80%;
+    }
+
+    #input{
+        width: 80%;
+    }
+}
 
 @media only screen and (max-width:500px){
     #home-banner div {
@@ -432,5 +462,16 @@ form button {
     #product-card {
         width: 50vw;
         height: fit-content; 
+    }
+
+    #order-list {
+        width: 80%;
+    }
+    #order-total{
+        width: 80%;
+    }
+
+    #input{
+        width: 80%;
     }
 }
