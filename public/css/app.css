@@ -294,7 +294,7 @@ a.custom-card:hover {
 }
 
 form {
-    margin-bottom: 10em;
+    margin-bottom: 5em;
     display: flex;
     flex-direction: column;
 }
@@ -323,6 +323,14 @@ form input {
     height: 15vh;
     margin-left:auto ;
     margin-right:auto ;
+}
+
+#comments {
+    width: 60%;
+    height: ;
+    margin-left:auto ;
+    margin-right:auto ; 
+    margin-top: 1em;
 }
 
 form button {
@@ -358,7 +366,7 @@ form button {
 
     #product-card {
         height: 40vh;
-        width: 20vw;
+        width: 25vw;
     }
 
     #order-list {
@@ -462,7 +470,7 @@ form button {
     }
 
     #product-card {
-        width: 50vw;
+        width: 55vw;
         height: fit-content; 
     }
 

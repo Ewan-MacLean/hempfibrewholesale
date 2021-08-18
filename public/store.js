@@ -28,14 +28,12 @@ function ready() {
 
 function purchaseClicked(event) {
 
-    // cartItemNames IS AN ARRAY!
-
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
+    // cartItemNames IS AN ARRAY!
     var htmlForm = document.getElementById('html-form')
     var orderList = document.getElementById('order-list')
     var orderTotal = document.getElementById('order-total')
-
     var quantityElement = cartItems.getElementsByClassName('cart-quantity-input')
 
     var totalElement = document.getElementsByClassName('cart-total-price')[0]
@@ -68,6 +66,7 @@ function purchaseClicked(event) {
         tax = Math.round(tax * 100) / 100
         totalAfterTax = Math.round(totalAfterTax * 100) / 100
         var totalCalc = ["$ " + total , "$ " + tax + " Tax" , "-------------" , "$ " + totalAfterTax]
+        
             orderTotal.value = totalCalc.join("\n");
         }
 
@@ -129,10 +128,6 @@ function addItemToCart(title, price, imageSrc) {
 
     cartRow.innerHTML = cartRowContents
     cartItems.append(cartRow)
-
-
-
-
 
     cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
     cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
