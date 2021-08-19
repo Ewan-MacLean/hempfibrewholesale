@@ -1,10 +1,12 @@
 html {
-    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 body {
     background-color: mintcream;
     font-family: 'Maven Pro', sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -65,7 +67,7 @@ body {
 }
 
 #home-label div {
-    text-shadow: 2px 2px 10px #000000;
+    text-shadow: 1px 1px 5px #000000;
 }
 
 
