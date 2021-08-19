@@ -1,12 +1,8 @@
-html {
-    overflow-y: scroll;
-}
+
 
 body {
     background-color: mintcream;
     font-family: 'Maven Pro', sans-serif;
-    overflow-y: scroll;
-    overflow-x: hidden;
 }
 
 .navbar {
@@ -89,6 +85,24 @@ body {
     border-top: 3px solid limegreen;
     border-bottom: 3px solid limegreen;
 }
+#product-header2 {
+    height: 22vh;
+    width: 75vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: ;
+}
+
+#product-header2 div {
+    height: 10vh;
+    width: 75vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid limegreen;
+    border-bottom: 3px solid limegreen;
+}
 
 .carousel {
     height: fit-content;
@@ -143,7 +157,7 @@ body {
 #home-banner div {
     color: whitesmoke;
     /* text-align: center; */
-    width: 1100px;
+    width: 75vw;
     margin-left: auto;
     margin-right: auto;
     text-shadow: 2px 2px 10px #000000;
@@ -415,6 +429,10 @@ a.custom-card:hover {
         font-size: 1rem;
     }
 
+    .carousel {
+        width: 60vw;
+    }
+
     .shop-item-text {
         font-size: 0.8em;
     }
@@ -470,8 +488,19 @@ a.custom-card:hover {
         font-size: 1.2rem ;
     }
 
+    .carousel {
+        width: 75vw;
+    }
+
+    .carousel-caption {
+        padding-bottom: 0;
+        text-shadow: 2px 2px 4px #000000;
+        font-size: 1em;
+    }
+
     #carousel-img {
-        height: 25vh;
+        height: 20vh;
+        width: 100%;
     } 
 
     #products {
@@ -527,6 +556,10 @@ a.custom-card:hover {
     #message{
         width: 80%;
     }
+
+    #comments {
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width:500px){
@@ -566,5 +599,21 @@ a.custom-card:hover {
 
     #input{
         width: 80%;
+    }
+
+    #comments {
+        width: 80%;
+    }
+
+    #product-header2 {
+        display: none;
+    }
+
+    #blog-card{
+        display: none ;
+    }
+
+    #gallery {
+        display: none;
     }
 }
