@@ -443,7 +443,7 @@ a.custom-card:hover {
 
     #product-card {
         height: fit-content;
-        width: 25vw;
+        width: 30vw;
     }
 
     #order-list {
@@ -586,8 +586,9 @@ a.custom-card:hover {
     }
 
     #product-card {
-        width: 55vw;
-        height: fit-content; 
+        width: 60vw;
+        height: fit-content;
+        padding-top: 1em; 
     }
 
     #order-list {
@@ -614,7 +615,7 @@ a.custom-card:hover {
         display: none ;
     }
 
-    #gallery {
+    #gallery1 {
         display: none;
     }
 }
