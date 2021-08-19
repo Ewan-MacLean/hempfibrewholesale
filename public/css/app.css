@@ -305,26 +305,57 @@ a.custom-card:hover {
     font-size: 1.75em;
 }
 
- /* #purchase-button {
-    text-decoration: none;
-}  */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+#contact {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 30vw; 
+    /* margin-left:auto ; */
+
+}
+#contact-email {
+    margin-top: ;
+    margin-bottom: 1em;
+    width: 30vw; 
+    /* margin-left:auto ; */
+
+}
+
+
+#message {
+    margin-bottom: 1em;
+    width: 30vw; 
+}
+
+#contact-button {
+    margin-top: 2em;
+    margin-right: auto;
+    width: 15em;
+    height: 5em;
+    border-radius: 2em;
+}
 
 #html-form {
     display: none;
 }
 
-form {
+#shop-form {
     margin-bottom: 5em;
     display: flex;
     flex-direction: column;
 }
 
-form h2 {
+#shop-form h2 {
     margin-left:auto ;
     margin-right:auto ;
 }
 
-form input {
+#input {
     margin-bottom: 1em;
     width: 30vw; 
     margin-left:auto ;
@@ -353,7 +384,7 @@ form input {
     margin-top: 1em;
 }
 
-form button {
+#shop-form button {
     width: 25vw;
     margin-top: 2em;
     margin-left: auto;
@@ -399,6 +430,18 @@ form button {
     #input{
         width: 60%;
     }
+
+    #contact {
+        width: 60%;
+    }
+    #contact-email{
+        width: 60%;
+    }
+
+    #message{
+        width: 60%;
+    }
+
 
 }
 
@@ -463,6 +506,17 @@ form button {
     }
 
     #input{
+        width: 80%;
+    }
+
+    #contact {
+        width: 80%;
+    }
+    #contact-email{
+        width: 80%;
+    }
+
+    #message{
         width: 80%;
     }
 }
