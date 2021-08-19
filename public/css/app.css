@@ -486,6 +486,7 @@ a.custom-card:hover {
 
     #product-header div h1{
         font-size: 1.2rem ;
+        text-align: center;
     }
 
     .carousel {
