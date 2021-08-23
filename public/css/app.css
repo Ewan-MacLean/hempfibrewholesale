@@ -1,8 +1,10 @@
-
-
 body {
     background-color: mintcream;
     font-family: 'Maven Pro', sans-serif;
+}
+
+#alt-body {
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -491,16 +493,17 @@ a.custom-card:hover {
 
     .carousel {
         width: 75vw;
+        height: 30vh;
     }
 
     .carousel-caption {
-        padding-bottom: 0;
+        /* padding-bottom: 5em; */
         text-shadow: 2px 2px 4px #000000;
-        font-size: 1em;
+        font-size: 0.5em;
     }
 
     #carousel-img {
-        height: 20vh;
+        height: 30vh;
         width: 100%;
     } 
 
@@ -576,6 +579,13 @@ a.custom-card:hover {
 
     #product-header div h1{
         font-size: 1.2em ;
+    }
+
+    /* .carousel-caption p{
+        font-size: 5rem;
+    } */
+    .carousel {
+        margin-top: 1em;
     }
 
     #products {
