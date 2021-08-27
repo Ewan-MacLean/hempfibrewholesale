@@ -1,11 +1,17 @@
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
 body {
     background-color: mintcream;
     font-family: 'Maven Pro', sans-serif;
 }
-
+/* 
 #alt-body {
+    overflow-y: scroll;
     overflow-x: hidden;
-}
+} */
 
 .navbar {
     background-color: mintcream;
@@ -203,7 +209,7 @@ a.custom-card:hover {
 
 #product-card   {
     width: 23vw;
-    height: 50vh;
+    height: fit-content;
     margin-left: 1.5em ;
     margin-right: 1.5em ;
 }
@@ -218,6 +224,7 @@ a.custom-card:hover {
     display: flex;
     flex-direction: column;
     justify-content:space-between;
+    height: fit-content;
 }
 
 .shop-item-button {
@@ -304,15 +311,15 @@ a.custom-card:hover {
 
 .cart-total {
     text-align: end;
-    margin-top: 10px;
-    margin-right: 10px;
+    margin-top: 1em;
+    margin-right: 1em;
 }
 
 .cart-total-title {
     font-weight: bold;
     font-size: 1.5em;
     color: black;
-    margin-right: 20px;
+    margin-right: 1em;
 }
 
 .cart-total-price {
