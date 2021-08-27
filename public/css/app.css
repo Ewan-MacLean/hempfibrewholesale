@@ -209,7 +209,7 @@ a.custom-card:hover {
 
 #product-card   {
     width: 23vw;
-    height: fit-content;
+    height: 30em;
     margin-left: 1.5em ;
     margin-right: 1.5em ;
 }
