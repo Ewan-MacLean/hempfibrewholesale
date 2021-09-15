@@ -1,27 +1,27 @@
 // Force SSL
 
-// var express1 = require('express');
-// var forceSSL = require('express-force-ssl');
-// var fs = require('fs');
-// var http = require('http');
-// var https = require('https');
+var express1 = require('express');
+var forceSSL = require('express-force-ssl');
+var fs = require('fs');
+var http = require('http');
+var https = require('https');
  
-// var ssl_options = {
-//   key: fs.readFileSync('./keys/private.key'),
-//   cert: fs.readFileSync('./keys/cert.crt'),
-//   ca: fs.readFileSync('./keys/intermediate.crt')
-// };
+var ssl_options = {
+  key: fs.readFileSync('./keys/private.key'),
+  cert: fs.readFileSync('./keys/cert.crt'),
+  ca: fs.readFileSync('./keys/intermediate.crt')
+};
  
-// var app1 = express1();
-// var server = http.createServer(app);
-// var secureServer = https.createServer(ssl_options, app1);
+var app1 = express1();
+var server = http.createServer(app);
+var secureServer = https.createServer(ssl_options, app1);
  
-// app1.use(express1.bodyParser());
-// app1.use(forceSSL);
-// app1.use(app1.router);
+app1.use(express1.bodyParser());
+app1.use(forceSSL);
+app1.use(app1.router);
  
-// secureServer.listen(443)
-// server.listen(80)
+secureServer.listen(443)
+server.listen(80)
 
 // end force ssl
 
